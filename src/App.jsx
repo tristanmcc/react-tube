@@ -1,5 +1,8 @@
 //React core
-import React, { useState } from "react";
+import React from "react";
+
+// other info
+import information from "./information.json";
 
 //CSS
 
@@ -9,17 +12,12 @@ import Card from "./components/Card";
 import Header from "./components/Header";
 
 function App() {
-  //State
-  const [total] = useState(5);
-  const [title] = useState("Alica Keys");
-  const [description] = useState("hello world");
 
+  //State
   return (
     <div>
       <Header />
-      <header>
-        
-      </header>
+        <Card data = {information[0]}></Card>
     </div>
   );
 }
